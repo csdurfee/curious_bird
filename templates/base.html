@@ -89,15 +89,13 @@
             <div class="h1">
                 <a href="{{ SITEURL }}/">
                     <span class="site_title">{{ SITENAME }}</span>
-                    {% if tag %}
-                        <span class="site_subtitle">&raquo; {{ tag }}</span>
-                    {% endif %}
+                    
                 </a>
             </div>
         </div>
-            {% if SITESUBTITLE %}
-            <h2>{{ SITESUBTITLE }}</h2>
-            {% endif %}
+        {% if tag %}
+            <div class="site_subtitle">&raquo; {{ tag }}</div>
+        {% endif %}
         </div>
     </header>
     {% endif %}
